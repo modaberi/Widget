@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginBottom="6dp"
+    android:layout_weight="1"
+    android:gravity="bottom|right"
+    android:minHeight="44dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tv_spinner_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_sub_color"
+        android:visibility="gone"
+        android:textSize="@dimen/size_subtitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:minHeight="34dp">
+
+        <TextView
+            android:id="@+id/tv_spinner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/size_title"/>
+
+        <View
+            android:id="@+id/spinner_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_spinner_title"
+            android:background="@color/line_color" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/ic_arrow_drop_down_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

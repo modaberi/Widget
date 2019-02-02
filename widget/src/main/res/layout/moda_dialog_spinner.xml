@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/container_btn">
+
+        <LinearLayout
+            android:id="@+id/container_new_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_shadow_bottom_primary"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btn_add_new_item"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_fill_green"
+                android:padding="@dimen/margin_6"
+                app:srcCompat="@drawable/ic_check" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_new_item"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:layout_weight="1"
+                android:background="@drawable/bg_bordered_edittext_white"
+                android:gravity="right|center_vertical"
+                android:hint="ثبت مورد جدید"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:padding="@dimen/margin_8"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/size_title" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_search" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_bbottoomsheet_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.modaberi.widget.ModaRippleView
+            android:id="@+id/rv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                style="@style/StyleTextHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cancel"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+        </com.modaberi.widget.ModaRippleView>
+
+        <com.modaberi.widget.ModaRippleView
+            android:id="@+id/rv_select_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_select_items"
+                style="@style/StyleTextHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_ok"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+        </com.modaberi.widget.ModaRippleView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

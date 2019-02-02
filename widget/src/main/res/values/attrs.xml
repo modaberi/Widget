@@ -1,0 +1,56 @@
+
+<resources>
+
+    <declare-styleable name="TextViewFont">
+        <attr name="isBold" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ModaEditText">
+        <attr name="edit_text_hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ModaSpinner">
+        <attr name="hint" format="string" />
+        <attr name="title" format="string" />
+        <attr name="title_color" format="color" />
+        <attr name="has_hint" format="boolean" />
+        <attr name="is_single_select" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ModaRippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomListView">
+        <attr name="tv_error_message" format="string" />
+        <attr name="tv_error_sub_message" format="string" />
+        <attr name="tv_loading_message" format="string" />
+        <attr name="clr_error_message" format="color" />
+        <attr name="clr_error_sub_message" format="color" />
+        <attr name="clr_loading_message" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ModaButtonBGPrimary">
+        <attr name="tv_title" format="string" />
+        <attr name="clr_avl" format="color" />
+        <attr name="clr_btn_text" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ModaButton">
+        <attr name="button_text" format="string" />
+    </declare-styleable>
+
+</resources>

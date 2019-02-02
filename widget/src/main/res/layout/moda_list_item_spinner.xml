@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.modaberi.widget.spinner.SpinnerItem" />
+
+    </data>
+-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="@dimen/margin_16"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_multi_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                style="@style/StyleTextTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+<!--</layout>-->
+
