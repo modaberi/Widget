@@ -62,17 +62,8 @@ public class ModaButtonBGPrimary extends LinearLayout {
 
     }
 
-    @Override
-    public boolean onTouchEvent(final MotionEvent event) {
-        if(event.getAction() == MotionEvent.ACTION_UP){
-            return performClick();
-        }
-        return true;
-    }
-
-    @Override
-    public boolean performClick() {
-        return super.performClick();
+    public void setButtonOnClickListener(View.OnClickListener onClick) {
+        mButton.setOnClickListener(onClick);
     }
 
     public void onLoading(){
