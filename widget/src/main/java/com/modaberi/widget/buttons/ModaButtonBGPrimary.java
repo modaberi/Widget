@@ -14,6 +14,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -59,7 +60,19 @@ public class ModaButtonBGPrimary extends LinearLayout {
 
         mButton.setText(hintStr != null && !hintStr.equals("")?hintStr:context.getString(R.string.label_done));
 
+    }
 
+    @Override
+    public boolean onTouchEvent(final MotionEvent event) {
+        if(event.getAction() == MotionEvent.ACTION_UP){
+            return performClick();
+        }
+        return true;
+    }
+
+    @Override
+    public boolean performClick() {
+        return super.performClick();
     }
 
     public void onLoading(){
