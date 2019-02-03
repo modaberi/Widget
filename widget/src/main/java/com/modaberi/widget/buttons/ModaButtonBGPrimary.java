@@ -80,6 +80,7 @@ public class ModaButtonBGPrimary extends LinearLayout {
         mAvlLoading.setVisibility(VISIBLE);
     }
 
+
     public void onResponse(){
         mButton.setVisibility(VISIBLE);
         mAvlLoading.setVisibility(GONE);
